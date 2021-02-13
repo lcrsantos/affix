@@ -19,6 +19,9 @@ else
 	wget -O "$hyper_deb" -NS "https://releases.hyper.is/download/deb" 
 
 	sudo apt install -yf "$hyper_deb"
+
+	sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /usr/local/bin/$hyper_alias 0
+	sudo update-alternatives --set x-terminal-emulator /usr/local/bin/$hyper_alias
 fi 
 
 
