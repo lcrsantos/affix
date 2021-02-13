@@ -40,6 +40,10 @@ install bash "zsh"
 install bash "oh-my-zsh"
 install bash "p10k"
 
+install debian "snap-store"
+install debian "gnome-tweaks"
+install debian "orchis-theme"
+
 install dev "vscode"
 
 install apps "teams"
@@ -52,5 +56,5 @@ install apps "spotify"
 
 
 
-purge_artifacts
+# purge_artifacts
 

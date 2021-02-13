@@ -29,9 +29,26 @@ function artifact_path(){
 	
 }
 
-purge_artifacts(){
+function purge_artifacts(){
 
 	rm -rf $artifacts_affix
 	
 }
 
+function clone(){
+	repo="$1"
+	target="$2"
+	target_name="$3"
+
+	[ -d "$target" ] && sudo rm -r "$target" && echo "purging and cloning $target_name" || echo "cloning $target_name"
+	git clone "$repo" "$target"
+}
+
+function clone_as_artifact(){
+	repo="$1"
+	target_name="$2"
+
+	target=$(artifact_path "$target_name")
+
+	clone "$repo" "$target" "$target_name"
+}

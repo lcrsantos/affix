@@ -6,15 +6,6 @@ inspect
 #shisha
 p10k_alias="p10k"
 
-function clone(){
-	repo="$1"
-	target="$2"
-	target_name="$3"
-
-	[ -d "$target" ] && sudo rm -r "$target" && echo "purging and cloning $target_name" || echo "cloning $target_name"
-	git clone "$repo" "$target"
-}
-
 #TODO validation wrong
 zsh_custom="${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}"
 zsh_plugin_as="$zsh_custom/plugins/zsh-autosuggestions"
