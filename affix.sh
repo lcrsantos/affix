@@ -45,6 +45,7 @@ install debian "gnome-tweaks"
 install debian "orchis-theme"
 
 install dev "vscode"
+install dev "dotnet"
 
 install apps "teams"
 install apps "spotify"
@@ -56,5 +57,5 @@ install apps "spotify"
 
 
 
-# purge_artifacts
+purge_artifacts
 
