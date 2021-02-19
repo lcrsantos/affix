@@ -49,6 +49,7 @@ install dev "dotnet"
 
 install apps "teams"
 install apps "spotify"
+install apps "discord"
 
 
 
