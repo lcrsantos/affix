@@ -34,7 +34,6 @@ function install(){
 	source "$(here)/$1/$2.sh"
 }
 
-
 install bash "hyper"
 install bash "zsh"
 install bash "oh-my-zsh"
@@ -44,6 +43,7 @@ install debian "snap-store"
 install debian "gnome-tweaks"
 install debian "orchis-theme"
 
+install dev "fira-font"
 install dev "vscode"
 install dev "dotnet"
 
